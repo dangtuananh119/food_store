@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+    <!-- Link icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Link swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- Link gallery -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- Link css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header: Start -->
+    <section class="header" id="header">
+        <a href="#" class="header__logo">
+            <i class='bx bxs-bowl-hot header__logo-icon'></i>
+            Food
+        </a>
+
+        <nav class="header__nav">
+            <a href="#home" class="header__nav-link">Home</a>
+            <a href="#about" class="header__nav-link">About</a>
+            <a href="#food" class="header__nav-link">Food</a>
+            <a href="#gallery" class="header__nav-link">Gallery</a>
+            <a href="#menu" class="header__nav-link">Menu</a>
+            <a href="#order" class="header__nav-link">Order</a>
+            <a href="#blogs" class="header__nav-link">Blogs</a>
+        </nav>
+
+        <i class='bx bx-menu header__nav-btn'></i>
+    </section>
+    <!-- Header: End -->
+
+    <!-- Home: Start -->
+    <section class="home" id="home">
+        <div class="swiper home__slides">
+            <div class="swiper-wrapper home__slide-wraper">
+                <div class="swiper-slide home__slide" style="background: url(./assets/images/home/home-slide-1.jpg) center / cover no-repeat;">
+                    <div class="home__slide-content">
+                        <span class="home__slide-text">Outstanding food</span>
+                        <h3 class="home__slide-heading">Delicious cooking</h3>
+                        <a href="#" class="home__slide-btn btn">Get started</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide home__slide" style="background: url(./assets/images/home/home-slide-2.jpg) center / cover no-repeat;">
+                    <div class="home__slide-content">
+                        <span class="home__slide-text">Outstanding food</span>
+                        <h3 class="home__slide-heading">Morning moment</h3>
+                        <a href="#" class="home__slide-btn btn">Get started</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide home__slide" style="background: url(./assets/images/home/home-slide-3.jpg) center / cover no-repeat;">
+                    <div class="home__slide-content">
+                        <span class="home__slide-text">Outstanding food</span>
+                        <h3 class="home__slide-heading">Authentic kitchen</h3>
+                        <a href="#" class="home__slide-btn btn">Get started</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- Home: End -->
+
+    <!-- About: Start -->
+    <section class="about" id="about">
+        <div class="grid">
+            <div class="row">
+                <div class="col l-6 m-6 c-12">
+                    <div class="about__img-wraper">
+                        <img src="./assets/images/about/about-img.png" alt="about-img" class="about__img">
+                    </div>
+                </div>
+                <div class="col l-6 m-6 c-12">
+                    <div class="about__content">
+                        <h2 class="about__content-title">Welcome to our restaurant!</h2>
+                        <p class="about__content-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi optio at, saepe accusamus dolorum, quos eos nesciunt amet exercitationem illum quis nostrum, repellat quaerat eum debitis fugit alias magnam omnis.
+                        </p>
+                        <a href="#" class="about__btn btn">Read more</a>
+            
+                        <div class="about__icons-container">
+                            <div class="grid">
+                                <div class="row">
+                                    <div class="col l-4 m-6 c-12">
+                                        <div class="about__icon-item">
+                                            <img src="./assets/images/about/about-icon-1.png" alt="about-icon-1" class="about__icon">
+                                            <h3 class="about__icon-title">Quality food</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6 c-12">
+                                        <div class="about__icon-item">
+                                            <img src="./assets/images/about/about-icon-2.png" alt="about-icon-2" class="about__icon">
+                                            <h3 class="about__icon-title">Food & drinks</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-12 c-12">
+                                        <div class="about__icon-item">
+                                            <img src="./assets/images/about/about-icon-3.png" alt="about-icon-3" class="about__icon">
+                                            <h3 class="about__icon-title">Expert chefs</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About: End -->
+
+    <!-- Food: Start -->
+    <section class="food" id="food">
+        <div class="food__heading heading">
+            <span class="food__heading-text">
+                Popular dishes
+            </span>
+            <h2 class="food__heading-title title">
+                Our delicious food
+            </h2>
+        </div>
+        <div class="swiper food__slides">
+            <div class="swiper-wrapper food__slide-wraper">
+                <div class="swiper-slide food__slide" data-name="food-1">
+                    <img src="./assets/images/food/food-img-1.png" alt="food-img-1" class="food__slide-img">
+                    <h3 class="food__slide-name">Delicious food</h3>
+                    <span class="food__slide-price">$49.99</span>
+                </div>
+                <div class="swiper-slide food__slide" data-name="food-2">
+                    <img src="./assets/images/food/food-img-2.png" alt="food-img-2" class="food__slide-img">
+                    <h3 class="food__slide-name">Delicious food</h3>
+                    <span class="food__slide-price">$49.99</span>
+                </div>
+                <div class="swiper-slide food__slide" data-name="food-3">
+                    <img src="./assets/images/food/food-img-3.png" alt="food-img-3" class="food__slide-img">
+                    <h3 class="food__slide-name">Delicious food</h3>
+                    <span class="food__slide-price">$49.99</span>
+                </div>
+                <div class="swiper-slide food__slide" data-name="food-4">
+                    <img src="./assets/images/food/food-img-4.png" alt="food-img-4" class="food__slide-img">
+                    <h3 class="food__slide-name">Delicious food</h3>
+                    <span class="food__slide-price">$49.99</span>
+                </div>
+                <div class="swiper-slide food__slide" data-name="food-5">
+                    <img src="./assets/images/food/food-img-5.png" alt="food-img-5" class="food__slide-img">
+                    <h3 class="food__slide-name">Delicious food</h3>
+                    <span class="food__slide-price">$49.99</span>
+                </div>
+            </div>
+            <div class="swiper-pagination food__pagination"></div>
+        </div>
+    </section>
+    <!-- Food: End -->
+
+    <!-- Food Preview: Start -->
+    <section class="food-previews">
+        <div class="food-preview__box" data-target="food-1">
+            <div class="bx bx-x food-preview__close"></div>
+            <img src="./assets/images/food/food-img-1.png" alt="food-img-1" class="food-preview__img">
+            <h3 class="food-preview__title">Delicious food</h3>
+            <div class="food-preview__stars">
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star-half food-preview__star"></i>
+            </div>
+            <p class="food-preview__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, hic!</p>
+            <div class="food-preview__price">$49.99</div>
+            <a href="#" class="food-preview__btn btn-full">Buy now</a>
+        </div>
+        <div class="food-preview__box" data-target="food-2">
+            <div class="bx bx-x food-preview__close"></div>
+            <img src="./assets/images/food/food-img-2.png" alt="food-img-2" class="food-preview__img">
+            <h3 class="food-preview__title">Delicious food</h3>
+            <div class="food-preview__stars">
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star-half food-preview__star"></i>
+            </div>
+            <p class="food-preview__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, hic!</p>
+            <div class="food-preview__price">$49.99</div>
+            <a href="#" class="food-preview__btn btn-full">Buy now</a>
+        </div>
+        <div class="food-preview__box" data-target="food-3">
+            <div class="bx bx-x food-preview__close"></div>
+            <img src="./assets/images/food/food-img-3.png" alt="food-img-3" class="food-preview__img">
+            <h3 class="food-preview__title">Delicious food</h3>
+            <div class="food-preview__stars">
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star-half food-preview__star"></i>
+            </div>
+            <p class="food-preview__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, hic!</p>
+            <div class="food-preview__price">$49.99</div>
+            <a href="#" class="food-preview__btn btn-full">Buy now</a>
+        </div>
+        <div class="food-preview__box" data-target="food-4">
+            <div class="bx bx-x food-preview__close"></div>
+            <img src="./assets/images/food/food-img-4.png" alt="food-img-4" class="food-preview__img">
+            <h3 class="food-preview__title">Delicious food</h3>
+            <div class="food-preview__stars">
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star-half food-preview__star"></i>
+            </div>
+            <p class="food-preview__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, hic!</p>
+            <div class="food-preview__price">$49.99</div>
+            <a href="#" class="food-preview__btn btn-full">Buy now</a>
+        </div>
+        <div class="food-preview__box" data-target="food-5">
+            <div class="bx bx-x food-preview__close"></div>
+            <img src="./assets/images/food/food-img-5.png" alt="food-img-5" class="food-preview__img">
+            <h3 class="food-preview__title">Delicious food</h3>
+            <div class="food-preview__stars">
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star food-preview__star"></i>
+                <i class="bx bxs-star-half food-preview__star"></i>
+            </div>
+            <p class="food-preview__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, hic!</p>
+            <div class="food-preview__price">$49.99</div>
+            <a href="#" class="food-preview__btn btn-full">Buy now</a>
+        </div>
+    </section>
+    <!-- Food Preview: End -->
+
+    <!-- Gallery: Start -->
+    <section class="gallery" id="gallery">
+        <div class="heading gallery__heading">
+            <span>Our gallery</span>
+            <h2 class="title">Our untold stories</h2>
+        </div>
+        <div class="gallery__container">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <a href="./assets/images/gallery/food-galler-img-1.jpg" class="gallery__box">
+                            <img src="./assets/images/gallery/food-galler-img-1.jpg" alt="food-galler-img-1" class="gallery__img">
+                            <div class="gallery__icon-wraper">
+                                <i class='bx bx-plus-medical gallery__icon'></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <a href="./assets/images/gallery/food-galler-img-2.jpg" class="gallery__box">
+                            <img src="./assets/images/gallery/food-galler-img-2.jpg" alt="food-galler-img-2" class="gallery__img">
+                            <div class="gallery__icon-wraper">
+                                <i class='bx bx-plus-medical gallery__icon'></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <a href="./assets/images/gallery/food-galler-img-3.jpg" class="gallery__box">
+                            <img src="./assets/images/gallery/food-galler-img-3.jpg" alt="food-galler-img-3" class="gallery__img">
+                            <div class="gallery__icon-wraper">
+                                <i class='bx bx-plus-medical gallery__icon'></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <a href="./assets/images/gallery/food-galler-img-4.jpg" class="gallery__box">
+                            <img src="./assets/images/gallery/food-galler-img-4.jpg" alt="food-galler-img-4" class="gallery__img">
+                            <div class="gallery__icon-wraper">
+                                <i class='bx bx-plus-medical gallery__icon'></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <a href="./assets/images/gallery/food-galler-img-5.jpg" class="gallery__box">
+                            <img src="./assets/images/gallery/food-galler-img-5.jpg" alt="food-galler-img-5" class="gallery__img">
+                            <div class="gallery__icon-wraper">
+                                <i class='bx bx-plus-medical gallery__icon'></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <a href="./assets/images/gallery/food-galler-img-6.jpg" class="gallery__box">
+                            <img src="./assets/images/gallery/food-galler-img-6.jpg" alt="food-galler-img-6" class="gallery__img">
+                            <div class="gallery__icon-wraper">
+                                <i class='bx bx-plus-medical gallery__icon'></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery: End -->
+
+    <!-- Menu: Start -->
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>Our menu</span>
+            <h2 class="menu__title title">Our popular dishes</h2>
+        </div>
+        <div class="swiper menu__slides">
+            <div class="swiper-wrapper menu__slide-wraper">
+                <div class="swiper-slide menu__slide">
+                    <h3 class="menu__slide-title">Breakfast</h3>
+                    <div class="menu__slide-container">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Morning breakfast</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Morning breakfast</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Morning breakfast</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Morning breakfast</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Morning breakfast</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Morning breakfast</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide menu__slide">
+                    <h3 class="menu__slide-title">Luch</h3>
+                    <div class="menu__slide-container">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Delicius luch</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Delicius luch</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Delicius luch</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Delicius luch</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide menu__slide">
+                    <h3 class="menu__slide-title">Dinner</h3>
+                    <div class="menu__slide-container">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Delicius dinner</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Delicius dinner</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Delicius dinner</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Delicius dinner</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Delicius dinner</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide menu__slide">
+                    <h3 class="menu__slide-title">Drinks</h3>
+                    <div class="menu__slide-container">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Cold drinks</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Cold drinks</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Cold drinks</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Cold drinks</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Cold drinks</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Cold drinks</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide menu__slide">
+                    <h3 class="menu__slide-title">Dessert</h3>
+                    <div class="menu__slide-container">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Sweet dessert</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Sweet dessert</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Sweet dessert</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="menu__slide-box">
+                                        <div class="menu__slide-box-info">
+                                            <h3 class="menu__slide-box-title">Sweet dessert</h3>
+                                            <p class="menu__slide-box-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="menu__slide-box-price">$49.99</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- Menu: End -->
+
+    <!-- Order: Start -->
+    <section class="order" id="order">
+        <div class="heading">
+            <span class="order__span">Order now</span>
+            <h2 class="title order__title">Fast home delivery</h2>
+        </div>
+        <form action="" class="order__form">
+            <div class="order__container">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col l-6 m-12 c-12">
+                            <div class="order__box">
+                                <span class="order__box-name">Full name</span>
+                                <input type="text" placeholder="Enter your name" class="order__box-input">
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="order__box">
+                                <span class="order__box-name">Phone number</span>
+                                <input type="text" placeholder="Enter your phone number" class="order__box-input">
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="order__box">
+                                <span class="order__box-name">Food name</span>
+                                <input type="text" placeholder="Food you want" class="order__box-input">
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="order__box">
+                                <span class="order__box-name">How much</span>
+                                <input type="number" placeholder="How many you want" class="order__box-input">
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="order__box">
+                                <span class="order__box-name">Order details</span>
+                                <input type="text" placeholder="Specifics with food" class="order__box-input">
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="order__box">
+                                <span class="order__box-name">When you want</span>
+                                <input type="datetime-local" class="order__box-input">
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="order__box">
+                                <span class="order__box-name">Your address</span>
+                                <textarea placeholder="Enter your address" class="order__box-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="order__box">
+                                <span class="order__box-name">Our address</span>
+                                <iframe class="order__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237988.5021746548!2d105.35465914597938!3d21.248879665013508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134f3e0bbf58003%3A0xb3db3222e47244e9!2zVsSpbmggVMaw4budbmcsIFbEqW5oIFBow7pjLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1648391087747!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Order now" class="btn order__btn">
+        </form>
+    </section>
+    <!-- Order: End -->
+
+    <!-- Blogs: Start -->
+    <section class="blogs" id="blogs">
+        <div class="heading">
+            <span>Our blogs</span>
+            <h2 class="blogs__title title">Our latest posts</h2>
+        </div>
+        <div class="swiper blogs__container">
+            <div class="swiper-wrapper blogs__box-wraper">
+                <div class="swiper-slide blogs__box">
+                    <div class="blogs__box-head">
+                        <img src="./assets/images/blogs/blog-img-1.jpg" alt="blog-img-1" class="blogs__box-img">
+                        <span class="blogs__box-name">Burger</span>
+                    </div>
+                    <div class="blogs__box-body">
+                        <div class="blogs__box-info">
+                            <a href="#" class="blogs__box-time">
+                                <i class='bx bxs-calendar blogs__box-icon'></i> 21st May, 2022
+                            </a>
+                            <a href="#" class="blogs__box-author">
+                                <i class='bx bxs-user blogs__box-icon'></i> by Admin
+                            </a>
+                        </div>
+                        <a href="#" class="blogs__box-title">Blog title</a>
+                        <p class="blogs__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, totam?</p>
+                        <a href="#" class="blogs__box-btn btn-full">Read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide blogs__box">
+                    <div class="blogs__box-head">
+                        <img src="./assets/images/blogs/blog-img-2.jpg" alt="blog-img-2" class="blogs__box-img">
+                        <span class="blogs__box-name">Sandwich</span>
+                    </div>
+                    <div class="blogs__box-body">
+                        <div class="blogs__box-info">
+                            <a href="#" class="blogs__box-time">
+                                <i class='bx bxs-calendar blogs__box-icon'></i> 21st May, 2022
+                            </a>
+                            <a href="#" class="blogs__box-author">
+                                <i class='bx bxs-user blogs__box-icon'></i> by Admin
+                            </a>
+                        </div>
+                        <a href="#" class="blogs__box-title">Blog title</a>
+                        <p class="blogs__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, totam?</p>
+                        <a href="#" class="blogs__box-btn btn-full">Read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide blogs__box">
+                    <div class="blogs__box-head">
+                        <img src="./assets/images/blogs/blog-img-3.jpg" alt="blog-img-3" class="blogs__box-img">
+                        <span class="blogs__box-name">Chicken</span>
+                    </div>
+                    <div class="blogs__box-body">
+                        <div class="blogs__box-info">
+                            <a href="#" class="blogs__box-time">
+                                <i class='bx bxs-calendar blogs__box-icon'></i> 21st May, 2022
+                            </a>
+                            <a href="#" class="blogs__box-author">
+                                <i class='bx bxs-user blogs__box-icon'></i> by Admin
+                            </a>
+                        </div>
+                        <a href="#" class="blogs__box-title">Blog title</a>
+                        <p class="blogs__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, totam?</p>
+                        <a href="#" class="blogs__box-btn btn-full">Read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide blogs__box">
+                    <div class="blogs__box-head">
+                        <img src="./assets/images/blogs/blog-img-4.jpg" alt="blog-img-4" class="blogs__box-img">
+                        <span class="blogs__box-name">Ice-scream</span>
+                    </div>
+                    <div class="blogs__box-body">
+                        <div class="blogs__box-info">
+                            <a href="#" class="blogs__box-time">
+                                <i class='bx bxs-calendar blogs__box-icon'></i> 21st May, 2022
+                            </a>
+                            <a href="#" class="blogs__box-author">
+                                <i class='bx bxs-user blogs__box-icon'></i> by Admin
+                            </a>
+                        </div>
+                        <a href="#" class="blogs__box-title">Blog title</a>
+                        <p class="blogs__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, totam?</p>
+                        <a href="#" class="blogs__box-btn btn-full">Read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide blogs__box">
+                    <div class="blogs__box-head">
+                        <img src="./assets/images/blogs/blog-img-5.jpg" alt="blog-img-5" class="blogs__box-img">
+                        <span class="blogs__box-name">Pizza</span>
+                    </div>
+                    <div class="blogs__box-body">
+                        <div class="blogs__box-info">
+                            <a href="#" class="blogs__box-time">
+                                <i class='bx bxs-calendar blogs__box-icon'></i> 21st May, 2022
+                            </a>
+                            <a href="#" class="blogs__box-author">
+                                <i class='bx bxs-user blogs__box-icon'></i> by Admin
+                            </a>
+                        </div>
+                        <a href="#" class="blogs__box-title">Blog title</a>
+                        <p class="blogs__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, totam?</p>
+                        <a href="#" class="blogs__box-btn btn-full">Read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide blogs__box">
+                    <div class="blogs__box-head">
+                        <img src="./assets/images/blogs/blog-img-6.jpg" alt="blog-img-6" class="blogs__box-img">
+                        <span class="blogs__box-name">Coffee</span>
+                    </div>
+                    <div class="blogs__box-body">
+                        <div class="blogs__box-info">
+                            <a href="#" class="blogs__box-time">
+                                <i class='bx bxs-calendar blogs__box-icon'></i> 21st May, 2022
+                            </a>
+                            <a href="#" class="blogs__box-author">
+                                <i class='bx bxs-user blogs__box-icon'></i> by Admin
+                            </a>
+                        </div>
+                        <a href="#" class="blogs__box-title">Blog title</a>
+                        <p class="blogs__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, totam?</p>
+                        <a href="#" class="blogs__box-btn btn-full">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination blogs__pagination"></div>
+        </div>
+    </section>
+    <!-- Blogs: End -->
+
+    <!-- Footer: Start -->
+    <section class="footer">
+        <div class="footer__container">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__box">
+                            <i class="bx bxs-time-five footer__box-icon"></i>
+                            <h3 class="footer__box-title">Opening hours</h3>
+                            <p class="footer__box-desc">7.00am to 10.00pm</p>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__box">
+                            <i class="bx bxs-phone footer__box-icon"></i>
+                            <h3 class="footer__box-title">Our phone</h3>
+                            <p class="footer__box-desc">+123-456-7890</p>
+                            <p class="footer__box-desc">+111-222-3333</p>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__box">
+                            <i class="bx bxs-envelope footer__box-icon"></i>
+                            <h3 class="footer__box-title">Email</h3>
+                            <p class="footer__box-desc">tuananh.dang119@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__box">
+                            <i class="bx bxs-map footer__box-icon"></i>
+                            <h3 class="footer__box-title">Address</h3>
+                            <p class="footer__box-desc">Vĩnh Tường, Vĩnh Phúc, Việt Nam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__shares">
+            <a href="#" class="bx bxl-facebook footer__share"></a>
+            <a href="#" class="bx bxl-twitter footer__share"></a>
+            <a href="#" class="bx bxl-instagram footer__share"></a>
+            <a href="#" class="bx bxl-linkedin footer__share"></a>
+        </div>
+        <p class="footer__credit">
+            Created by <span>Dang Tuan Anh</span> | All rights reserved!
+        </p>
+    </section>
+    <!-- Footer: End -->
+
+
+    <!-- Link: swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Link: gallery js -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    
+    <!-- Link: JS -->
+    <script src="./assets/main.js"></script>
+</body>
+</html>

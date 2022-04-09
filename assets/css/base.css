@@ -1,0 +1,83 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --peru: #cd9452;
+    --light-black: #333;
+    --light-white: #666;
+    --light-bg: #f5f5f5;
+    --dark-bg: rgba(0, 0, 0, .7);
+    --border: .1rem solid #aaa;
+    --box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, .1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+html {
+    font-family: 'Dosis', sans-serif;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--peru);
+    border-radius: 2rem;
+}
+
+section {
+    padding: 5rem 8%;
+}
+
+.btn,
+.btn-full {
+    margin-top: 1rem;
+    background: var(--peru);
+    color: var(--white);
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.heading span {
+    font-size: 2.4rem;
+    color: var(--peru);
+}
+
+.heading .title {
+    font-size: 4.4rem;
+    color: var(--black);
+    margin-top: 1rem;
+    font-weight: 600;
+}
