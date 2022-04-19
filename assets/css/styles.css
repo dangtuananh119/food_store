@@ -405,6 +405,16 @@
     box-shadow: var(--box-shadow);
 }
 
+.order__box.invalid .order__box-error {
+    font-size: 1.6rem;
+    color: rgb(172, 30, 30);
+}
+
+.order__box.invalid .order__box-input {
+    border-color: rgb(172, 30, 30);
+    margin-bottom: .4rem;
+}
+
 .order__box-name {
     font-size: 2rem;
     margin: 2rem 0 .6rem 0;

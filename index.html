@@ -653,50 +653,57 @@
             <span class="order__span">Order now</span>
             <h2 class="title order__title">Fast home delivery</h2>
         </div>
-        <form action="" class="order__form">
+        <form action="" method="POST" class="order__form">
             <div class="order__container">
                 <div class="grid">
                     <div class="row">
                         <div class="col l-6 m-12 c-12">
                             <div class="order__box">
                                 <span class="order__box-name">Full name</span>
-                                <input type="text" placeholder="Enter your name" class="order__box-input">
+                                <input type="text" name="full-name" placeholder="Enter your name" class="order__box-input">
+                                <span class="order__box-error"></span>
                             </div>
                         </div>
                         <div class="col l-6 m-12 c-12">
                             <div class="order__box">
                                 <span class="order__box-name">Phone number</span>
-                                <input type="text" placeholder="Enter your phone number" class="order__box-input">
+                                <input type="text" name="phone-number" placeholder="Enter your phone number" class="order__box-input">
+                                <span class="order__box-error"></span>
                             </div>
                         </div>
                         <div class="col l-6 m-12 c-12">
                             <div class="order__box">
                                 <span class="order__box-name">Food name</span>
-                                <input type="text" placeholder="Food you want" class="order__box-input">
+                                <input type="text" name="food-name" placeholder="Food you want" class="order__box-input">
+                                <span class="order__box-error"></span>
                             </div>
                         </div>
                         <div class="col l-6 m-12 c-12">
                             <div class="order__box">
                                 <span class="order__box-name">How much</span>
-                                <input type="number" placeholder="How many you want" class="order__box-input">
+                                <input type="number" name="quantity" placeholder="How many you want" class="order__box-input">
+                                <span class="order__box-error"></span>
                             </div>
                         </div>
                         <div class="col l-6 m-12 c-12">
                             <div class="order__box">
                                 <span class="order__box-name">Order details</span>
-                                <input type="text" placeholder="Specifics with food" class="order__box-input">
+                                <input type="text" name="description" placeholder="Specifics with food" class="order__box-input">
+                                <span class="order__box-error"></span>
                             </div>
                         </div>
                         <div class="col l-6 m-12 c-12">
                             <div class="order__box">
                                 <span class="order__box-name">When you want</span>
-                                <input type="datetime-local" class="order__box-input">
+                                <input type="datetime-local" name="time" class="order__box-input">
+                                <span class="order__box-error"></span>
                             </div>
                         </div>
                         <div class="col l-6 m-12 c-12">
                             <div class="order__box">
                                 <span class="order__box-name">Your address</span>
-                                <textarea placeholder="Enter your address" class="order__box-textarea"></textarea>
+                                <textarea placeholder="Enter your address" name="address" class="order__box-textarea"></textarea>
+                                <span class="order__box-error"></span>
                             </div>
                         </div>
                         <div class="col l-6 m-12 c-12">
@@ -899,5 +906,26 @@
     
     <!-- Link: JS -->
     <script src="./assets/main.js"></script>
+    <script src="./assets/vadilator.js"></script>
+    <script>
+        Vadilator({
+            form: '.order__form',
+            formGroupSelector: '.order__box',
+            errorSelector: '.order__box-error',
+            rules: [
+                Vadilator.isRequired('input[name="full-name"]', 'Vui lòng nhập trường này'),
+                Vadilator.isRequired('input[name="phone-number"]', 'Vui lòng nhập trường này'),
+                Vadilator.isRequired('input[name="food-name"]', 'Vui lòng nhập trường này'),
+                Vadilator.isRequired('input[name="quantity"]', 'Vui lòng nhập trường này'),
+                Vadilator.isRequired('input[name="description"]', 'Vui lòng nhập trường này'),
+                Vadilator.isRequired('input[name="time"]', 'Vui lòng nhập trường này'),
+                Vadilator.isRequired('textarea[name="address"]', 'Vui lòng nhập trường này'),
+            ],
+            onSubmit: (data) => {
+                // Call API
+                console.log(data)
+            }
+        })
+    </script>
 </body>
 </html>
